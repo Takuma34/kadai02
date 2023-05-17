@@ -2,7 +2,9 @@
 $("#str").click(function () {
   $(".hide_last").addClass("fadeUp");
   $(".btn").addClass("disp_none");
-  alert("ゲーム説明");
+  alert(
+    "ルール\n⭐︎3つの数字を当てよう\n⭐︎3つの数字は重複しない\n⭐︎数字と場所が合っていれば、Hit !!\n⭐︎数字だけ合っていれば、Blow !!\n⭐︎3つの数字がすべて Hit (数字と場所が全て一致) でクリア\n⭐︎7回以内にクリアしよう !!"
+  );
 });
 
 ///  ゲームページ　//
@@ -22,7 +24,9 @@ function newgame() {
 
 ///  タイトルボタンのクリックで、ヒント表示　///
 $(".title").click(function () {
-  alert("Hello World!");
+  alert(
+    "ルール\n⭐︎3つの数字を当てよう\n⭐︎3つの数字は重複しない\n⭐︎数字と場所が合っていれば、Hit !!\n⭐︎数字だけ合っていれば、Blow !!\n⭐︎3つの数字がすべて Hit (数字と場所が全て一致) でクリア\n⭐︎7回以内にクリアしよう !!"
+  );
 });
 
 ////  ランダムで数字を作成  ///
@@ -90,22 +94,21 @@ $("#go").on("click", function () {
   ////   回答を履歴で表示  ///
   $("#field").append(
     turn +
-      "回目のチャレンジ[ " +
+      "回目のチャレンジ&nbsp;	[ " +
       myanswer[0] +
       myanswer[1] +
       myanswer[2] +
-      " ] " +
+      " ]&nbsp;	" +
       hit +
-      " HIT / " +
+      " HIT&nbsp;/&nbsp;" +
       count +
       " BLOW<br>"
   );
 
   if (hit == 3) {
-    alert("おめでとう、正解です。");
-    location.reload();
+    alert("おめでとう、正解です!!");
   } else if (turn == 7) {
-    alert("残念、失敗です。");
+    alert("残念、失敗です。 正解は、" + que + "  でした。");
     location.reload();
   }
 

@@ -71,6 +71,7 @@ header {
   font-size: 20px;
   width: 15%;
   margin-left: 15px;
+  margin-top: 5px;
 }
 
 .title {
@@ -78,8 +79,8 @@ header {
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 10px #f9e000;
+  margin-bottom: 12px;
+  text-decoration: underline 8px #f9e000;
 }
 ul.youcards {
   display: flex;
@@ -102,7 +103,7 @@ li {
   display: flex;
   width: 60%;
   justify-content: center;
-  border: 3px solid #3b82c4;
+  border: 2px solid #3b82c4;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 10px;
