@@ -1,9 +1,12 @@
-body {
+/* 　　全体 　*/
+ody {
   margin: 0;
   padding: 0;
   font-size: 32px;
   width: 700px;
 }
+
+/* 　　タイトルページ 　　*/
 header {
   background-color: #fff;
   border-radius: 10px;
@@ -17,6 +20,7 @@ header {
   width: 100%;
 }
 
+/* 開始ボタン */
 #str {
   color: black;
   cursor: pointer;
@@ -24,12 +28,12 @@ header {
   width: 20%;
   background-color: white;
 }
-
 #str:hover {
   background: #f5a500;
   color: white;
 }
 
+/* 次ページへの移行 */
 .hide_last {
   display: none;
 }
@@ -39,7 +43,6 @@ header {
 .btn.disp_none {
   display: none;
 }
-
 /* fadeUp */
 .fadeUp {
   animation-name: fadeUpAnime;
@@ -59,11 +62,13 @@ header {
   }
 }
 
+/* 　　ゲームページ 　　*/
 .hide_last.fadeUp {
   border: 7px solid #3b82c4;
   border-radius: 10px;
 }
 
+/* 開始ボタン */
 #starbtn {
   background-color: #f5a500;
   color: white;
@@ -73,7 +78,6 @@ header {
   margin-left: 15px;
   margin-top: 5px;
 }
-
 .title {
   font-size: 35px;
   text-align: center;
@@ -82,6 +86,8 @@ header {
   margin-bottom: 12px;
   text-decoration: underline 8px #f9e000;
 }
+
+/* 表示場所 */
 ul.youcards {
   display: flex;
   justify-content: center;
@@ -98,6 +104,7 @@ li {
   font-size: 35px;
 }
 
+/* 回答場所 */
 .answerbox {
   border-radius: 5px;
   display: flex;
@@ -117,6 +124,7 @@ select {
   width: 40px;
 }
 
+/* 決定・クリアボタン */
 #go,
 #clear {
   color: black;
@@ -136,6 +144,7 @@ select {
   color: white;
 }
 
+/* 履歴表示 */
 #field {
   font-size: 20px;
   text-align: center;

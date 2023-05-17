@@ -50,15 +50,15 @@ $("#go").on("click", function () {
 
   const myanswer_n = document.querySelector('select[name="myanswer_n"]');
   const selectedn = myanswer_n.value;
-  console.log("回答n ", selectedn);
+  // console.log("回答n ", selectedn);
 
   const myanswer_o = document.querySelector('select[name="myanswer_o"]');
   const selectedo = myanswer_o.value;
-  console.log("回答o ", selectedo);
+  // console.log("回答o ", selectedo);
 
   const myanswer_p = document.querySelector('select[name="myanswer_p"]');
   const selectedp = myanswer_p.value;
-  console.log("回答p ", selectedp);
+  // console.log("回答p ", selectedp);
 
   $("#youNum1").html(selectedn);
   $("#youNum2").html(selectedo);
