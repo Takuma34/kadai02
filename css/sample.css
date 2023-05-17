@@ -6,6 +6,7 @@ body {
 }
 header {
   background-color: #fff;
+  border-radius: 10px;
   border: 7px solid #3b82c4;
   text-align: center;
   font-size: 50px;
@@ -58,6 +59,11 @@ header {
   }
 }
 
+.hide_last.fadeUp {
+  border: 7px solid #3b82c4;
+  border-radius: 10px;
+}
+
 #starbtn {
   background-color: #f5a500;
   color: white;
@@ -67,21 +73,36 @@ header {
   margin-left: 15px;
 }
 
+.title {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #f9e000;
+}
+ul.youcards {
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+}
+
 li {
   list-style-type: none;
   border: 1px solid #666;
   background-color: #fff;
   padding: 10px;
   display: inline;
-  margin: 10px;
+  margin: 20px;
+  font-size: 35px;
 }
 
 .answerbox {
   border-radius: 5px;
   display: flex;
-  width: 70%;
+  width: 60%;
   justify-content: center;
-  border: 5px solid #3b82c4;
+  border: 3px solid #3b82c4;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -91,8 +112,8 @@ select {
   font-size: 20px;
   text-align: center;
   margin: 20px;
-  height: 80px;
-  width: 50px;
+  height: 60px;
+  width: 40px;
 }
 
 #go,
@@ -112,4 +133,9 @@ select {
 #clear:hover {
   background: #f5a500;
   color: white;
+}
+
+#field {
+  font-size: 20px;
+  text-align: center;
 }

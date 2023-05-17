@@ -2,6 +2,7 @@
 $("#str").click(function () {
   $(".hide_last").addClass("fadeUp");
   $(".btn").addClass("disp_none");
+  alert("ゲーム説明");
 });
 
 ///  ゲームページ　//
@@ -18,6 +19,11 @@ function newgame() {
   document.getElementById("starbtn").style.display = "none";
   selectN();
 }
+
+///  タイトルボタンのクリックで、ヒント表示　///
+$(".title").click(function () {
+  alert("Hello World!");
+});
 
 ////  ランダムで数字を作成  ///
 function selectN() {
