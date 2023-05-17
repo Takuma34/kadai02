@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/sample.css" />
+    <title>じゃんけん</title>
+  </head>
+
+  <body>
+
+    <header class="btn">
+        <h2>数字当てゲーム</h2>
+        <button id="str">開始</button>
+    </header>
+
+
+    <!------ゲーム画面------>
+    <main>
+      <div class="hide_last">
+
+     <div>Hit&Blow</div>
+  <button id="starbtn" onclick="newgame()">スタート</button>
+
+<div id="choice">
+
+  <div id="youcard">
+		<ul id="youcards">
+			<li id="youNum1">*</li>
+			<li id="youNum2">*</li>
+			<li id="youNum3">*</li>
+		</ul>
+	</div>
+
+
+<button id="go">決定</button>
+<button id="clear">クリア</button>
+
+<div class="answerbox">
+<select name="myanswer_n">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+</select>
+<select name="myanswer_o">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+</select>
+<select name="myanswer_p">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+</select>
+</div>
+
+<div id="field"></div>
+  
+  </div>
+    </main>
+
+    <footer></footer>
+
+    <!---jqueryを先に書く-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+    <!---jsを読み込ませる-->
+    <script src="js/janken-ver2.js"></script>
+  </body>
+</html>
